@@ -1,0 +1,13 @@
+[avatars] img{
+  width: 40%;
+  height: auto;
+  display:block;
+}
+
+[avatars] h3{
+  color: #005870;
+}
+
+[avatar-input] {
+  width: 100%;
+}

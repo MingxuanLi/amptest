@@ -1,9 +1,18 @@
-<div>
-  <p>
-    avatars works!
-  </p>
-  <md-input placeholder="amount" align="end">
-    <span md-prefix>$&nbsp;</span>
-    <span md-suffix>.00</span>
-  </md-input>
+<div padding>
+  <h2 text-center>People Search</h2>
+  <md-input avatar-input
+            #nameInput
+            type="text"
+            (keyup)="onKey($event)"
+            [ngModel]="avatar"
+            placeholder="enter your search term"></md-input>
+
+  <md-grid-list margin-top-large
+                cols="3"
+                avatars>
+    <md-grid-tile *ngFor="let avatar of avatars">
+      <img md-list-avatar src="{{avatar.imgSrc}}" alt="">
+      <h3> {{avatar.name | capitalizePipe}} </h3>
+    </md-grid-tile>
+  </md-grid-list>
 </div>

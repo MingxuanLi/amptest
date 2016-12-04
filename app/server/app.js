@@ -21,7 +21,7 @@ let dotenvConfig = {
 };
 dotenv.config(dotenvConfig);
 
-mongoose.connect(process.env['MONGO.DB']);
+mongoose.connect(process.env.MONGO_DB);
 
 var app = express();
 app.use(morgan('common'));

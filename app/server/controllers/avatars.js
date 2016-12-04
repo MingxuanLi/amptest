@@ -12,7 +12,7 @@ let router = express.Router({
 router.get('/', (req, res, next) => {
     let query = {};
     if(req.query.filter){
-        query.name = {$regex : '.*' + req.query.filter +'.*'};
+        query.name = {$regex : '.*' + req.query.filter.toLowerCase() +'.*'};
     }
     Avatar.find(query, (err, results) => {
         if(err){

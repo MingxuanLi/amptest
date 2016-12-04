@@ -16,7 +16,7 @@ gulp.task('serve', ['build'], (cb) => {
         script: appPath,
         ext: 'ts js html css styl',
         env: {},
-        ignore: ['task/', 'build/'],
+        ignore: ['task/', 'build/', 'app/client/config'],
         tasks: ['build']
     }).on('restart', () => {
         util.log(util.colors.magenta('the app is restarted'));

@@ -6,13 +6,18 @@ import {HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {AvatarsComponent} from './avatars/avatars.component';
 import {MaterialModule} from "@angular/material";
+import {AvatarsService} from "./services/avatars.service";
 
-import 'hammerjs';import 'hammerjs';
+import 'hammerjs';
+import { CapitalizePipePipe } from './pipes/capitalize-pipe.pipe';
+import { LayoutDirective } from './directives/layout-directive.directive';
 
 @NgModule({
     declarations: [
         AppComponent,
-        AvatarsComponent
+        AvatarsComponent,
+        CapitalizePipePipe,
+        LayoutDirective
     ],
     imports: [
         BrowserModule,
@@ -20,7 +25,7 @@ import 'hammerjs';import 'hammerjs';
         HttpModule,
         MaterialModule.forRoot()
     ],
-    providers: [],
+    providers: [AvatarsService],
     bootstrap: [AppComponent]
 })
 export class AppModule {

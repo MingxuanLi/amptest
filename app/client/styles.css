@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+[text-center] {
+  text-align: center;
+}
+
+[no-margin] {
+  margin: 0px;
+}
+
+[padding] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+[margin-top-large]{
+  margin-top: 2rem;
+}
