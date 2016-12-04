@@ -11,7 +11,10 @@ Make sure your mongodb is open for connections
 
 If you want to run the app:
 * gulp serve
+
+
 Then you can open http://localhost:3000 if you are running locally with specified port 3000 in the config
+
 
 If you want to build the app:
 * gulp build
