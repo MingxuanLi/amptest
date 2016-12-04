@@ -4,7 +4,7 @@
 build/
 node_modules/
 app/client/**/*.js
-app/client/config/
+app/client/config/app-settings.ts
 *.js.map
 e2e/**/*.js
 e2e/**/*.js.map
